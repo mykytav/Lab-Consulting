@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacts -- LAB Consulting</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Lab Consulting: Ваш надежный партнер в области транспортно-логистического сопровождения">
+	<meta name="keywords" content="логистика, lab consalting, консультации по логистике, транспорт, перевозки">
+	<meta property="og:title" content="Lab Consulting: Ваш надежный партнер в области транспортно-логистического сопровождения">
+	<meta property="og:description" content="Lab Consulting: Ваш надежный партнер в области транспортно-логистического сопровождения">
+	<meta property="og:type" content="consulting">
+	<meta property="og:image" content="https://wayup.in/assets/cache/images/650x527-logo%281%29.ba3.png">
+	<meta property="og:site_name" content="Lab Consulting">
+<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+ 	<link rel="stylesheet" href="css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="css/slick.css"/>
+ 	<link rel="stylesheet" href="css/jquery.arcticmodal-0.3.css">
+ 	<link rel="stylesheet" href="css/simple.css">
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 	<link rel="stylesheet" href="css/fonts.css">
+ 	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+		<!-- Preloader -->
+	<div id="page-preloader">
+		<div class="overlay-loader">
+		<div class="loader">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	</div>
+	<!-- Preloader -->
+	<!-- Nav -->
+	<nav class="nav">
+		<div class="container ">
+			<div class="row d-flex align-items-center flex-column flex-sm-row">
+				<div class="col-sm-5 col-md-4 logo">
+					<img src="img/logo.png" alt="Lab Consulting" class="nav__logo">
+				</div>
+				<div class="col-12 col-lg-6 d-none d-lg-block menu-collapse">
+						<ul class="menu d-flex justify-content-around">
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									О компании
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Пресс-центр
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Услуги
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Отрасли
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+				<div class="col-sm-3 col-md-2 ml-auto nav__button">
+					<a href="#" class="nav__btn btn">
+						<i class="fa fa-phone"></i>
+						Заказать звонок
+					</a>
+				</div>
+				<div class="col-1 d-lg-none ml-md-auto">
+						<button class="menu-open">
+							<i class="fa fa-navicon"></i>
+						</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!-- Nav -->
+	<!-- Arctic modal -->
+	<div style="display: none;">
+    <div class="box-modal" id="exampleModal">
+        <div class="box-modal_close arcticmodal-close"><i class="fa fa-window-close"></i></div>
+        <form action="success.php" method="POST" class="form js-form" id="popupResult">
+        	<h4 class="form__title">
+        		Заполните эту форму, чтобы получить консультацию
+        	</h4>
+        	<p class="form__text">
+        		Это поможет вам снять все ваши вопросы
+        	</p>
+        	<input type="text" name="name" required placeholder="Введите имя" class="form__input form-control form__field">
+        	<input type="email" name="email" required placeholder="Введите ваш Email" class="form__input form-control form__field">
+        	<input type="tel" name="tel" required placeholder="Введите ваш телефон" class="form__input form-control form__field">
+        	<button class="form__btn" data-submit>Отправить заявку</button>
+        </form>
+    </div>
+	</div>
+	<!-- Arctic modal -->
+	<!-- First screen -->
+	<header class="top-header" id="top-header">
+		<div class="search" id="search">
+			<div class="container">
+				<div class="row align-items-center search-line">
+					<div class="col-sm-4 col-md-3 col-lg-2 social social-search d-flex justify-content-around">
+						<div class="social__icon social__icon_fb">
+							<a href="#" class="social__link_fb">
+								<i class="fa fa-facebook"></i>
+							</a>
+						</div>
+						<div class="social__icon social__icon_tw">
+							<a href="#" class="social_link_tw">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</div>
+						<div class="social__icon social__icon_tg">
+							<a href="#" class="social_link_tg">
+								<i class="fa fa-telegram"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-sm-7 col-md-3">
+						<div class="header-motto">
+							Ваш надежный партнер в области <br>
+							транспортно-логистического сопровождения
+						</div>
+					</div>
+					<div class=" col-md-3 col-lg-2 ml-auto input">
+						<input type="search" class="input__search" id="inputSearch" name="search" placeholder="Поиск">
+						<i class="fa fa-search"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Second screen -->
+		<div class="head" id="head">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-3">
+							<h2 class="head__title">
+								Контакты
+							</h2>
+							<p class="head__nav">
+								<a href="index.html" class="link-main">
+									Главная
+								</a>
+								→ Контактная информация
+							</p>
+					</div>
+					<div class="col-lg-6 ml-auto head__menu">
+						<ul class="head__list d-flex flex-column flex-sm-row">
+							<li class="head__list_item">
+								<a href="#" class="head__list_link">
+									Офис в Одессе
+								</a>
+							</li>
+							<li class="head__list_item">
+								<a href="#" class="head__list_link">
+									Офис в Киеве
+								</a>
+							</li>
+							<li class="head__list_item">
+								<a href="#" class="head__list_link">
+									Офис в Харькове
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Third screen -->
+	<section class="map" id="map">
+    <!-- Here is the map -->
+	</section>
+	<!-- Fourth screen -->
+	<section class="info" id="info">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						О компании
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+								Видение, миссия и ценности
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Преимущества
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Клиенты
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Партнеры
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						Пресс – центр
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+								Новости
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Публикации
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Мероприятия
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Консультация эксперта
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						Услуги
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+								Legal (Юридическое сопровождение)
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Accounting ( Финансовый аутсорсинг)
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Business Consulting (Бизнес консалтинг)
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						Отрасли
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+								Аграрный сектор
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Внешнеэкономическая деятельность
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								ИT – бизнес
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Оптовая и розничная торговля
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Сфера услуг
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Транспорт и Логистика
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						Образовательный центр
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+							Про Образовательный Центр
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Бизнес-тренинги, семинары, круглые столы
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Преимущества
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Alumni
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h6 class="info__title">
+						Соц. предпринимательство
+					</h6>
+					<ul class="list">
+						<li class="list__item">
+							<a href="" class="list__link">
+								Социальная миссия
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Проекты 
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Партнеры 
+							</a>
+						</li>
+						<li class="list__item">
+							<a href="" class="list__link">
+								Консультация эксперта
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer -->
+	<footer class="footer" id="footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-4 align-self-start">
+					<img src="img/logoFooter.png" alt="Lab Consulting" class="footer__logo">
+				</div>
+				<div class="col-sm-5 col-lg-3 flex-column footer__contact">
+					<p class="footer__propos">
+						Вы хотите сотрудничать с нами? <br>
+						У Вас есть идеи или предложения? 
+						Свяжитесь с нами прямо сейчас!
+					</p>
+					<p class="footer__address">
+						65000, <br>
+						Украина, г. Одесса <br>
+						Ул Базарная, 36
+					</p>
+				</div>
+				<div class="col-sm-4 col-lg-3 flex-column credentials">
+					<div class="design d-flex align-items-center">
+						<div class="design__a">
+							A
+						</div>
+						<div class="design__by">
+							Дизайн и разработка 
+							<span class="upper">
+								Андрей Гаврилов
+							</span>
+						</div>
+					</div>
+					<div class="credits">
+						© Все права защищены <br>
+						<span class="bold">LAB Consulting</span> <br>
+						<a href="#" class="credits__link">
+							lab-consult.com
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-3 col-lg-2 pl-0">
+					<a href="#" class="footer__btn btn">
+						<i class="fa fa-phone"></i>
+						Заказать звонок
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Form send reload -->
+	<div id="reload">
+		<img src="img/spinner.svg">
+	</div>
+	<div id="overlay-reload">
+		<div id="thx">
+			Спасибо! Мы обязательно вам перезвоним
+		</div>
+ 	</div>
+	<!-- Form send reload -->
+	<!-- Scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/slick.js"></script>
+  <script src="js/jquery.arcticmodal-0.3.min.js"></script>
+  <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Google maps -->
+	<!-- <script>
+      function initMap() {
+        var uluru = {lat: 46.474191, lng: 30.745512};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZa6UVOPm_eoVYFwmeSVM6Qeg9WTee4iQ&callback=initMap">
+    </script> -->
+    <!-- Google maps -->
+    <!-- Yandex maps -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        var myMap, 
+            myPlacemark;
+
+        function init(){ 
+            myMap = new ymaps.Map("map", {
+                center: [46.47412857, 30.74600850],
+                zoom: 15
+            }); 
+            
+            myPlacemark = new ymaps.Placemark([46.47412857, 30.74600850], {
+                hintContent: 'LAB Consulting',
+                balloonContent: '<<div class="block" style="background: #7c8493; width: 400px; border-radius: 8px; margin: 0 auto; "><div class="block-top" style="display: flex; color: #fff; font-weight: 700; border-bottom: 1px solid #7e8796; margin-top: 25px; padding: 20px"><p class="block-title">LAB Consulting</p><div style="width:;display:  flex;margin-left: 130px;"><div class="social__icon social__icon_fb" style="margin-left: 20px"><a href="#" class="social__link_fb"><i class="fa fa-facebook"></i></a></div><div class="social__icon social__icon_tw" style="margin-left: 20px"><a href="#" class="social_link_tw"><i class="fa fa-twitter"></i></a></div><div class="social__icon social__icon_tg" style="margin-left: 20px"><a href="#" class="social_link_tg"><i class="fa fa-telegram"></i></a></div></div></div><div class="block-bottom" style="padding: 10px 0px; color: #fff; display: flex;"><div class="1" style="width:170px; "><div style="padding: 0px 10px;"><span><i class="fa fa-phone"></i>+38 (048) 756-23-54</span><br><span><i class="fa fa-phone"></i>+38 (048) 756-23-54</span><p>65000, <br> Украина, г. Одесса <br> Ул Базарная, 36</p><span><i class="fa fa-envelope"></i> info@lab-consult.com</span></div></div><div class="1"><p style="width:210px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br><p style="width: 210px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div></div></div>'
+            });
+            
+            myMap.geoObjects.add(myPlacemark);
+        }
+    </script>
+    <!-- Yandex maps -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <!-- Scripts -->
+    
+</body>
+</html>
